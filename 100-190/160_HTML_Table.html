@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table{
+            border-width: 10px;
+            border-style: solid;
+            border-color: aquamarine;
+
+            border: 10px solid pink; /*Alle drei Werte in einem. */
+
+            /* Die doppelten Linien entfernen. */
+            border-collapse: collapse;
+        }
+
+        /* Mehrere Selektoren per kommaseparierter Liste: */
+        td, th {
+            border: 1px solid plum;
+            /* Innenrand */
+            padding:10px;
+        }
+        tr:hover{
+            background-color:gray;
+        }
+    </style>
+</head>
+<body>
+<h1>HTML-Tabellen</h1>
+<!--
+    tr - table row
+    th - table header
+    td - table data
+
+-->
+<table>
+    <tr>
+        <th>T or F?</th>
+        <th>True</th>
+        <th>False</th>
+    </tr>
+
+    <tr>
+        <th>True</th>
+        <td>True</td>
+        <td>False</td>
+    </tr>
+    <tr>
+        <th>False</th>
+        <td>False</td>
+        <td>False</td>
+    </tr>
+</table>
+
+
+</body>
+</html>
