@@ -1,3 +1,4 @@
+
 <?php
 
 $options = [
@@ -26,6 +27,15 @@ foreach ($filme as $key => $film)
         $filme[$key] = $film;
     }
 
+foreach ($headings as $key => $item) {
+    $lower = strtolower($item);
+
+    if ($lower === 'fsk') {
+        $headings[$key] = strtoupper($item);
+    } else {
+        $headings[$key] = ucfirst($item);
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -49,7 +59,7 @@ foreach ($filme as $key => $film)
     </tr>
 
     <?php foreach ($filme as $film) { ?>
-        <tr onclick="location.href='Film_Anzeigen.php?id=1'">
+        <tr>
             <?php foreach ($film as $f) { ?>
             <td>
                 <?php echo $f; ?>
