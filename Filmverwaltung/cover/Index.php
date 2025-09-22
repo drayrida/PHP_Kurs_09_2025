@@ -37,7 +37,11 @@ foreach ($filme as $key => $film) {
 <head>
     <meta charset="UTF-8">
     <title>Filme anzeigen</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../030_Film_Anzeigen/style.css">
+    <style>
+    img{ size:200px;
+    }
+    </style>
 </head>
 <body>
 <h1>Filme anzeigen</h1>
@@ -51,11 +55,11 @@ foreach ($filme as $key => $film) {
     </tr>
     <?php foreach ($filme as $film) { ?>
         <tr onclick="location.href='film_anzeigen.php?id=<?php echo $film['id']; ?>'">
-            <?php foreach ($film as $f) { ?>
+           <!-- <?php foreach ($film as $f) { ?>
                 <td>
                     <?php echo $f; ?>
                 </td>
-            <?php } ?>
+            <?php } ?> -->
         </tr>
     <?php } ?>
 
