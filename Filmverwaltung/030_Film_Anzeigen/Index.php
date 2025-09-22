@@ -1,3 +1,6 @@
+
+
+
 <?php
 $options = [
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
@@ -25,6 +28,7 @@ foreach ($filme as $key => $film) {
 // unset($film['id']);     // Inhalte entfernen
     unset($film['cover']);  // Inhalte entfernen
     $filme[$key] = $film;
+
 }
 ?>
 

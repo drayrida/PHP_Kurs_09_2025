@@ -30,7 +30,7 @@ $db->query("INSERT INTO filme VALUES
 $db->query("INSERT INTO filme VALUES (12, 'The Rock', 1996, 'Action', 'Walt Disney Studios', 16, 335, 136, NULL);");
 $db->query("INSERT INTO filme VALUES (13, 'The Little Things', 2021, 'Krimi', 'Warner Bros. Pictures', 16, 30.8, 128, NULL);");
 $db->query("INSERT INTO filme VALUES (14, 'Idiocracy', 2006, 'Dokumentation', '20th Century Fox', 16, 0.5, 84,'Idiocracy.jpg');");
-$db->query("INSERT INTO filme VALUES (15, 'The Darkest Hour' , 2011, 'Science Fiction', 'Sony Pictures', 16, 7.2, 122,'thedarkesthour.jpg');
+$db->query("INSERT INTO filme VALUES (15, 'The Darkest Hour' , 2011, 'Science Fiction', 'Sony Pictures', 16, 7.2, 122,'thedarkesthour.jpg')");
 //PDO-Statement- Objekt erzeugen
 
 $stmt = $db->query('SELECT * FROM filme;');
