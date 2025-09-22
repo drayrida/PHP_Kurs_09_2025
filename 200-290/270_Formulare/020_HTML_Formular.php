@@ -1,6 +1,7 @@
 <?php
 
-// Methode der Formular Überlieferung
+// Methode der Formular-Überlieferung
+
 // Bei GET werden die Inhalte der URL übergeben
 var_dump($_GET);
 
@@ -15,7 +16,7 @@ var_dump($_POST)
 </head>
 <body>
 <h1>HTML-Formular</h1>
-<form action="<?php echo $_SERVER['PHP_SELF'];?>" method "post">
+<form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
 
     Vorname:<input type="text">
     <input type="submit" value="abschicken">

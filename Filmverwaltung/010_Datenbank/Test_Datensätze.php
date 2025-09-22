@@ -16,7 +16,7 @@ $db = new PDO('mysql:host=localhost;dbname=filmverwaltung' , 'root' , "", $optio
 $db->query('TRUNCATE TABLE filme;');
 
 $db->query("INSERT INTO filme VALUES 
-(1, 'Equalizer', 2014, 'Action', 'Sony' , 16, 192.3, 132, NULL),
+(1, 'Equalizer', 2014, 'Action', 'Sony' , 16, 192.3, 132, 'equalizer.jpg'),
 (2, 'Inception', 2010, 'Science Fiction', 'Warner Bros.', 12, 829.89, 148, 'inception.jpg'),
 (3, 'The Dark Knight', 2008, 'Action', 'Warner Bros.', 16, 1004.93, 152, 'dark_knight.jpg'),
 (4, 'Titanic', 1997, 'Drama/Romance', 'Paramount Pictures', 12, 2187.46, 195, 'titanic.jpg'),
@@ -29,8 +29,8 @@ $db->query("INSERT INTO filme VALUES
 (11, 'Frozen', 2013, 'Animation/Musical', 'Walt Disney', 6, 1280.00, 102, 'frozen.jpg');");
 $db->query("INSERT INTO filme VALUES (12, 'The Rock', 1996, 'Action', 'Walt Disney Studios', 16, 335, 136, NULL);");
 $db->query("INSERT INTO filme VALUES (13, 'The Little Things', 2021, 'Krimi', 'Warner Bros. Pictures', 16, 30.8, 128, NULL);");
-$db->query("INSERT INTO filme VALUES (14, 'Idiocracy', 2006, 'Dokumentation', '20th Century Fox', 16, 0.5, 84, NULL);");
-
+$db->query("INSERT INTO filme VALUES (14, 'Idiocracy', 2006, 'Dokumentation', '20th Century Fox', 16, 0.5, 84,'Idiocracy.jpg');");
+$db->query("INSERT INTO filme VALUES (15, 'The Darkest Hour' , 2011, 'Science Fiction', 'Sony Pictures', 16, 7.2, 122,'thedarkesthour.jpg');
 //PDO-Statement- Objekt erzeugen
 
 $stmt = $db->query('SELECT * FROM filme;');

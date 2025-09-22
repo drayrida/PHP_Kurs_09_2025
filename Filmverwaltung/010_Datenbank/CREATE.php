@@ -11,7 +11,7 @@ $db->query('USE filmverwaltung');
 
 
 $db->query('CREATE TABLE filme ('
-	. 'id INT PRIMARY KEY AUTO_INCREMENT,'
+	. 'id INT PRIMARY KEY,'
 	. 'titel VARCHAR(255),'
 	. 'jahr YEAR,'
 	. 'genre VARCHAR(255),'

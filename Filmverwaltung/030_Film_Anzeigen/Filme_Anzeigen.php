@@ -49,7 +49,7 @@ foreach ($filme as $key => $film)
     </tr>
 
     <?php foreach ($filme as $film) { ?>
-        <tr>
+        <tr onclick="location.href ='Film_Anzeigen.php?id=<?php echo $film['id']; ?>'">
             <?php foreach ($film as $f) { ?>
             <td>
                 <?php echo $f; ?>

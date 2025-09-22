@@ -38,6 +38,7 @@ echo "<table>";
 
 for ($i = 1;$i <= 10;$i++)
 {
+    // Wenn Silberreihe true dann: XY sonst: XY;
     $silberreihe = ($i %2 == 0) ? ' class="silber"' : '';
     echo "<tr{$silberreihe}>";
 
