@@ -1,5 +1,6 @@
 <?php
 Index.php:
+// SELECT id,titel
 Spalten raus: Id, Vertrieb, FSK, Einspielergebnis
 Laenge -> Länge
 Reihenfolge ändern: Titel, Jahr, Länge, Genre
