@@ -27,6 +27,19 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
+        .silber{
+            background-color:gray;
+
+
+        }
+        table{
+            border: 10px solid;
+            color: black;
+        }
+        th{
+            font-size: 8px;
+            color: red;
+        }
 
     </style>
 </head>
@@ -35,6 +48,10 @@
 
 <?php
 echo "<table>";
+$zahler= 1 ;
+for ($i=1;$i<=10;$i++){
+    echo "<th>".$i.' X '.$zahler."</th>";
+}
 
 for ($i = 1;$i <= 10;$i++)
 {
@@ -47,9 +64,13 @@ for ($i = 1;$i <= 10;$i++)
     }
     echo "</tr>";
 }
+
 echo "</table>";
 
 ?>
+<tr>
+    <th>2 X 1</th>
+</tr>
 </body>
 </html>
 

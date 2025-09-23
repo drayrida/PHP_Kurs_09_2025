@@ -28,7 +28,7 @@ $zahlstelle = 1;
 
 foreach ($reiseziele as $reise)
 {
-    echo $zahlstelle.' '.$reise.'<br>';
+    echo $zahlstelle.'. '.$reise.'<br>';
     $zahlstelle++;
 }
 ?>
