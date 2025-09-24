@@ -1,0 +1,21 @@
+<?php
+Index.php:
+// SELECT id,titel
+Spalten raus: Id, Vertrieb, FSK, Einspielergebnis
+Laenge -> Länge
+Reihenfolge ändern: Titel, Jahr, Länge, Genre
+film_anzeigen.php:
+Erste Buchstaben groß
+FSK & ID komplett groß
+Laenge -> Länge
+Einspielergebnis als ganze Zahl stellen: 192.3 -> 192.300.000
+/*TODOs
+
+
+Film anzeigen
+
+Film eintragen
+
+Film updaten
+
+Film löschen

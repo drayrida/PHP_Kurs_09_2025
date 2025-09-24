@@ -22,3 +22,9 @@ function addiere2($zahl1, $zahl2 =1)
 echo addiere2(4, 7); //11
 echo "\n";
 echo addiere2(4); // 5
+echo "\n";
+
+$meineZahl = 4;
+tueWas($meineZahl);
+
+echo $meineZahl; // 4

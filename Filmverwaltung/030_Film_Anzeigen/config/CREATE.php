@@ -17,7 +17,7 @@ $db->query('CREATE TABLE filme ('
 	. 'genre VARCHAR(255),'
 	. 'vertrieb VARCHAR(255),'
 	. 'fsk INT,'
-	. 'budget FLOAT,'
+    . 'einspielergebnis FLOAT,'
 	. 'laenge INT,'
 	. 'cover VARCHAR(255)'
     . ');');
