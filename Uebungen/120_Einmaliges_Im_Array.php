@@ -11,19 +11,17 @@
  * die nur einmal vorkommt.
  */
 
-// Das Array, das die vier doppelten und eine einmalige Zahl enthält
-$filledarray = [1, 3, 6, 1, 3, 6, 9, 2, 2]; // 9 Elemente, wie gefordert
+// vier doppelten und eine einmalige Zahl
+$filledarray = [1, 3, 6, 1, 3, 6, 9, 2, 2];
 
-// Zähle die Häufigkeit jeder Zahl im Array
+// Häufigkeit jeder Zahl
 $haeufigkeiten = array_count_values($filledarray);
 
-// Durchlaufe das Häufigkeits-Array
 foreach ($haeufigkeiten as $zahl => $anzahl) {
-    // Wenn die Häufigkeit (Anzahl) einer Zahl genau 1 ist,
-    // dann ist das unsere einmalige Zahl.
+   
     if ($anzahl === 1) {
         echo 'Das ist die einmalige Zahl: ' . $zahl.'<br>';
-        break; // Wir haben die Zahl gefunden, also die Schleife beenden
+        break;
     }
 }
 echo 'Das waren die Zahlen im gesamten: ';

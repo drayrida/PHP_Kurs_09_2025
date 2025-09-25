@@ -44,6 +44,15 @@ $stmt = $db->prepare($sql);
     Länge:<input type="text" name="laenge" value="128"><br>
 
     <input type="submit" value="abschicken">
+    FSK:<!-- input type="text" name="fsk" value="16" -->
+    <select name="fsk">
+        <option value="0">0</option>
+        <option value="6">6</option>
+        <option value="12">12</option>
+        <option value="16">16</option>
+        <option value="18">18</option>
+    </select>
+    <br>
 
 </form>
 <p> Paragraph und am Ende Zeilenumbruch</p>

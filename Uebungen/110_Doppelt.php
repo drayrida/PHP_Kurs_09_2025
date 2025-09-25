@@ -21,10 +21,10 @@ if(!in_array($random, $array))
 {
 
     echo'The randomized number '.$random.' is not in the Array.';
-    return false;
+
 }
 if(in_array($random, $array))
 {
     echo'The randomized number '.$random.' is already in the Array.';
-    return true;
+
 }
